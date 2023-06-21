@@ -15,7 +15,8 @@ for comentario in listaComentarios:
             
             break
 
-print(comentariosFinais)
+tabelaFinal = pd.DataFrame({"Comentários": comentariosFinais})
+tabelaFinal.to_excel("tabelaFinal.xlsx", index=False)
                 
 
  
